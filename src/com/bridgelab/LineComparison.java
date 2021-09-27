@@ -9,7 +9,7 @@ public class LineComparison {
         int y1 = 8;
         int y2 = 89;
         int p1 = 14;
-        int p2 = 16;
+        int p2 = 15;
         int q1 = 4;
         int q2 = 85;
 
@@ -19,11 +19,12 @@ public class LineComparison {
         System.out.println("line 1st length : " +lengthOfLine1);
         System.out.println("line 2nd length : " +lengthOfLine2);
 
-
-        if (lengthOfLine1 == lengthOfLine2) {
-            System.out.println("Both lines are equal.");
-        } else {
-            System.out.println("Both lines are not equal.");
+        if(lengthOfLine1>lengthOfLine2) {
+            System.out.println("Length of Line1 is greater than Length of Line2");
+        }else if(lengthOfLine1<lengthOfLine2) {
+            System.out.println("Length of Line1 is lesser than Length of Line2");
+        }else {
+            System.out.println("Both lines are Equal");
         }
     }
 	}
